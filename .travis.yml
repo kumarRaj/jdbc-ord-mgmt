@@ -9,6 +9,5 @@ script:
 jdk:
   - oraclejdk7
   - openjdk7
-
 services: 
-  -	mysql
+  - mysql
