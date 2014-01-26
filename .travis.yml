@@ -1,1 +1,14 @@
 language: java
+
+install:
+  - TERM=dumb ./gradlew -q assemble
+
+script:
+  - TERM=dumb ./gradlew check
+
+jdk:
+  - oraclejdk7
+  - openjdk7
+
+services: 
+  -	mysql
