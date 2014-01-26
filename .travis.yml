@@ -3,8 +3,6 @@ language: java
 before_script:
 install:
   - TERM=dumb ./gradle -q assemble
-services: 
-  - mysql
 
 script:
   - TERM=dumb ./gradle check
